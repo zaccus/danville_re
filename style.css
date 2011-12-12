@@ -1,0 +1,606 @@
+/*
+THEME NAME: Danville Real Estate
+DESCRIPTION: Default ellamaedexter.com Theme
+VERSION: 1.0
+AUTHOR: Zach Dexter
+AUTHOR URI: http://zaccus.com
+TAGS: danville ky real estate, danville ky homes for sale
+*/
+
+a:link {
+   text-decoration: none;
+   }
+   
+a:hover {
+   text-decoration: underline;
+   }
+
+.news_cycle {
+   font-family: "News Cycle", sans-serif;
+   }
+   
+.emboss {
+   text-shadow: 0px 1px 0px #ffffff;
+   }
+   
+.clearboth {
+   clear: both;
+   }
+   
+.text-indent {
+   text-indent: -99999px;
+   }
+   
+.text-indent a {
+   display: none;
+   }   
+   
+body {
+   background-image: url("images/bg_tile.png");
+   font-family: verdana, arial, sans-serif;
+   }
+   
+ul {
+   list-style: none;
+   }
+   
+#wrapper {
+   width: 960px;
+   margin: 0px auto 0px auto;
+   background-color: #17a3d1;
+   background: -moz-radial-gradient(50% 50%, 
+                                    circle, 
+                                    #17a3d1 20px, 
+                                    #ffffff 100%);
+   background: -webkit-radial-gradient(50% 50%, 
+                                       circle, 
+                                       #17a3d1 20px, 
+                                       #ffffff 100%);
+   border: 4px solid #7fa9b7;
+   padding-top: 10px;
+   }
+   
+#header {
+   width: 919px;
+   height: 240px;
+   background-color: #7b7b7b;
+   margin: 0px auto 0px auto;
+   border: 5px solid black;
+   }
+   
+#header_photo {
+   position: absolute;
+   background-image: url("images/main_st.png");
+   width: 819px;
+   height: 240px;
+   margin: 0px 0px 0px 101px;
+   }
+   
+#portrait {
+   border: 5px solid #ffffff;
+   margin: 20px 0px 0px 20px;
+   }
+   
+#marquee_container {
+   position: absolute;
+   width: 694px;
+   height: 177px;
+   background-color: #bcbcbc;
+   margin: 25px 0px 0px 200px;
+   border-radius: 50px;
+   opacity: 0.8;
+   z-index: 2;
+   }   
+   
+#marquee {
+   position: relative;
+   width: 694px;
+   height: 177px;
+   margin: -187px 0px 0px 200px;
+   z-index: 5;
+   }
+   
+#logo {
+   margin: 10px 0px 0px 10px;
+   }
+   
+#tagline {
+   position: absolute;
+   margin: -275px 0px 0px 250px;
+   }
+   
+#contact {
+   position: absolute;
+   font-size: 9px;
+   margin: -212px 0px 0px 255px;
+   }
+ 
+#nav-container {
+   /position: relative;
+   margin: -155px 0px 0px 220px;
+   z-index: 2;
+   }   
+   
+#nav li {
+   display: block;
+   float: left;
+   width: 120px;
+   background-color: #585858;
+   padding: 2px;
+   border: 4px solid #d2d2d2;
+   text-align: center;
+   border-radius: 15px;
+   }
+   
+#nav li:hover {
+   background-color: #d2d2d2;
+   }
+   
+#nav li.current_page_item {
+   background-color: #d2d2d2;
+   }
+   
+#nav li a {
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: bolder;
+   }
+   
+#nav li a:hover {
+   color: #000000;
+   }
+
+#nav li.current_page_item a {
+   color: #000000;
+   }
+
+/* Home Search Button */
+.page-item-26 {
+   margin: 0px 0px 0px 0px;
+   }
+   
+/* Recent Listings Button */
+.page-item-5 {
+   }
+
+/* Rentals Button */
+.page-item-22 {
+   margin: 0px 0px 0px 0px;
+   }
+
+/* Why Danville Button */
+.page-item-24 {
+   margin: 0px 0px 0px 0px;
+   }
+   
+#rss {
+   position: absolute;
+   width: 32px;
+   height: 32px;
+   margin: 5px 0px 0px 840px;
+   background-image: url("images/rss_dark.png");
+   }
+   
+#rss:hover {
+   background-image: url("images/rss_active.png");
+   }
+   
+#facebook {
+   position: absolute;
+   width: 32px;
+   height: 32px;
+   margin: 5px 0px 0px 880px;
+   background-image: url("images/facebook_dark.png");
+   }
+   
+#facebook:hover {
+   background-image: url("images/facebook_active.png");
+   }
+   
+#container {
+   width: 922px;
+   border: 5px solid #000000;
+   background-color: #ffeebc;
+   margin: 10px auto 10px auto;
+   border-radius: 20px;
+   }
+   
+#content {
+   background: -moz-radial-gradient(50% 50%, 
+                                    circle, 
+                                    #ffeebe 20px, 
+                                    #ffffff 100%);
+   background: -webkit-radial-gradient(50% 50%,
+                                       circle,
+                                       #ffeebe 20px,
+                                       #ffffff 100%);
+   width: 897px;
+   margin: 10px auto 10px auto;
+   padding: 0px auto 10px auto;
+   border-radius: 20px;
+   }
+   
+#content h2 {
+   font-family: "News Cycle";
+   }   
+   
+/* Index Page */   
+   
+#featured-heading h1 {
+   position: relative;
+   font-size: 20pt;
+   line-height: 45px;
+   margin: 0px 0px 0px 180px;
+   }
+   
+#slideshow {
+   position: relative;
+   width: 570px;
+   height: 365px;
+   border: 3px solid #000000;
+   margin: 0px 0px 20px 15px;
+   }
+   
+.slide {
+   display: none;
+   }
+   
+.slide-caption {
+   width: 573px;
+   height: 69px;
+   background-color: #000000;
+   opacity: 0.65;
+   margin: -120px 0px 0px 0px;
+   }
+
+.slide-text {
+   margin: -70px 0px 0px 0px;
+   }
+
+.slide-text span {
+   color: #ffffff;
+   font-size: 15pt;
+   font-weight: bold;
+   opacity: 1.00;
+   }
+
+.slide-address {
+   position: absolute;
+   margin: 5px 0px 0px 20px;
+   }
+   
+.slide-city {
+   position: absolute;
+   margin: 37px 0px 0px 20px;
+   }
+   
+.slide-price {
+   position: absolute;
+   margin: 37px 0px 0px 410px;
+   }
+   
+.slide-bedbath {
+   position: absolute;
+   margin: 5px 0px 0px 410px;
+   }
+   
+.slideshow-button {
+   float: left;
+   width: 49px;
+   height: 49px;
+   background-color: #ffffff;
+   border: 1px solid #936c3b;
+   margin: 0px 10px 0px 10px;
+   text-align: center;
+   border-radius: 30px;
+   }
+   
+.slideshow-button:hover {
+   background-color: #ececec;
+   }
+   
+.button-symbol {
+   margin: 12px 0px 0px 0px;
+   }
+
+#slideshow_control {
+   margin: -15px 0px 0px 150px;
+   }
+
+#next {
+   margin: 0px 0px 0px 0px;
+   }
+   
+#pause, {
+   margin: 0px 0px 0px 100px;
+   }
+   
+#prev {
+   margin: 0px 0px 0px 0px;
+   }
+   
+#index-content-right {
+   float: right;
+   width: 300px;
+   margin: -395px 25px 0px 0px;
+   }
+   
+.content-right-button {
+   background-color: #ffffff;
+   text-align: center;
+   font-weight: bold;
+   line-height: 20px;
+   margin: 0px 0px 50px 0px;
+   padding: 10px;
+   border: 2px solid #936c3b;
+   border-radius: 30px;
+   }
+   
+.content-right-button:hover {
+   background-color: #ececec;
+   }
+   
+#index-content-right a {
+   color: #936c3b;
+   }
+   
+/* Listings Page */
+
+#activelistings {
+   margin: 0px 0px 0px 0px;
+   }
+
+#active-heading h2 {
+   width: 100%;
+   margin: 0px 0px 0px 240px;
+   line-height: 45px;
+   }
+
+.prop-thumb {
+   width: 223px;
+   height: 143px;
+   border-style: solid;
+   background-color: #000000;
+   margin: 20px 0px 0px 0px;
+   }
+
+.prop-thumb img {
+   width: 100%;
+   height: 100%;
+   }
+   
+.prop-thumb img:hover {
+   opacity: 0.8;
+   }
+
+.prop-box {
+   background-color: #ffffff;
+   width: 100%;
+   margin: 0px 0px 10px 10px;
+   padding: 20px;
+   border: 2px solid #b3922f;
+   }
+   
+.listing-item {
+   height: 224px;
+   }
+   
+.listing-address h2 {
+   position: absolute;
+   font-size: 16pt;
+   margin: 0px 0px 0px 0px;
+   }
+   
+.listing-status h3 {
+   position:  absolute;
+   font-size: 15px;
+   margin: 5px 0px 0px 295px;
+   }
+   
+.propdata {
+   margin: -160px 0px 0px 260px;
+   }   
+   
+.listing-blurb {
+   margin: 20px 0px 0px 0px;
+   }
+   
+/* Single Listing */
+
+.tabnav {
+   margin: 0px 0px 0px 30px;
+   }
+
+.tabnav li {
+   float: left;
+   border: 1px solid #b3922f;
+   width: 150px;
+   text-align: center;
+   }
+
+.tab-content {
+   display: none;
+   }
+
+#listing-container {
+   /border: 1px solid #000000;
+   /width: 550px;
+   }
+
+#gre_map_canvas {
+   width: 400px;
+   height: 400px;
+   }
+
+.ngg-gallery-thumbnail-box {
+   width: 180px;
+   height: 124px;
+   float: left;
+   margin: 0px 0px 15px 0px;
+}
+
+.ngg-gallery-thumbnail {
+   width: 165px;
+}
+
+.ngg-gallery-thumbnail img {
+   width: 100%;
+   height: 100%;
+   }
+
+#propdata {
+   width: 100%;
+   height: 100px;
+   }
+
+.single-propdata-line {
+   float: left;
+   }
+
+/* Why Danville */
+.ngg-singlepic {
+   border: 1px solid #000000;
+   padding: 2px;
+   }
+
+/* Other Pages */
+
+#page-content-inner {
+   width: 550px;
+   float: left;
+   }
+   
+.benefits {
+   padding-left: 170px;
+   }
+   
+.benefits li {
+   list-style: circle;
+   margin-bottom: 10px;
+   }
+
+/* Sidebar */
+
+#sidebar {
+   width: 275px;
+   float: right;
+   margin: 0px 10px 0px 0px;
+   background-color: #ffffff;
+   border: 2px solid #b3922f;
+   }
+   
+#sidebar-inner {
+   width: 100%;
+   }
+
+#sidebar-inner ul {
+   margin: 0px 0px 0px 0px;
+   }
+
+.sidebar-widget {
+   margin: 20px 0px 20px 0px;
+   }
+   
+.sidebar-widget li {
+   border: 2px solid #936c3b;
+   border-right-color: #ffffff;
+   border-radius: 15px;
+   padding: 0px 0px 0px 10px;
+   margin: 0px 0px 0px -5px;
+   }
+   
+.sidebar-widget li:hover {
+   background-color: #ececec;
+   }
+   
+.sidebar-widget li a {
+   color: #936c3b;
+   font-weight: bold;
+   }
+
+.sidebar-widget h2 {
+   margin: 0px 0px 0px 0px;
+   }
+
+.widget-title-line {
+   width: 150px;
+   color: #b3922f;
+   margin: 10px 0px 10px 20px;
+   }
+
+/* Forms */
+
+.wpcf7-form p {
+   font-weight: bold;
+   text-align: center;
+   }
+   
+.wpcf7-list-item {
+   display: block;
+   margin: 10px 0px 10px 0px;
+   }
+
+.wpcf7-text {
+   width: 300px;
+   border: 2px solid #b3922f;
+   border-radius: 20px;
+   padding: 5px 10px 5px 10px;
+   font-size: 15pt;
+   }
+
+.form-notes {
+   font-size: 12pt;
+   }
+
+.wpcf7-submit {
+   width: 100px;
+   border: 2px solid #b3922f;
+   border-radius: 15px;
+   color: #b3922f;
+   background-color: #ffffff;
+   font-weight: bold;
+   }
+   
+.wpcf7-submit:hover {
+   background-color: #ececec;
+   }
+   
+/* Footer */
+
+#footer {
+   width: 919px;
+   background-color: #bcbcbc;
+   border: 5px solid #000000;
+   margin: 0px auto 0px auto;
+   }
+ 
+#footer-sidebar h2 {
+   font-family: "News Cycle", sans serif;
+   font-size: 15pt;
+   }
+   
+#footer-sidebar ul {
+   margin: -15px 0px 0px -40px;
+   }
+
+.footer-widget {
+   margin: 0px 0px 0px 20px;   
+   }
+
+.widget-content li {
+   margin: 0px 0px 10px 0px;
+   font-size: 10pt;
+   }
+
+#footer-sidebar li {
+   width: 290px;
+   float: left;
+   margin: 0px 15px 10px 0px;
+   }
+   
+#credits {
+   font-size: 8pt;
+   text-align: center;
+   height: 12px;
+   padding: 0px 0px 5px 0px;
+   }

@@ -1,0 +1,1 @@
+<?php echo file_get_contents($_GET['http://www.mls.com']);?>
