@@ -14,7 +14,7 @@ Template Name: Listings Index
 ?>
 <?php get_header(); ?>
 
-	<!-- Begin Content -- Listings Index -->
+	<!-- Begin Content -- Listings Monkey -->
    <div id="container">
       <div id="content">
       <span id="active-heading" class="news_cycle"><h2><?php the_title(); ?></h2></span>

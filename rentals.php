@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Listings Index
+Template Name: Rentals Index
 */
 
 # intended only for page use, displays all listings
