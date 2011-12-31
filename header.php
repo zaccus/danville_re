@@ -32,7 +32,6 @@
 <div id="wrapper">
    <div id="header">
       <div id="marquee_container"></div>
-      <div id="header_photo"></div>
       <img id="portrait" src="<?php bloginfo('template_directory'); ?>/images/emd_portrait.jpg" alt="Ella Mae Dexter | Danville, KY Realtor" />      
       <div id="marquee">
          <a href="<?php bloginfo('url'); ?>" title="Home">
@@ -50,7 +49,7 @@
             </ul>
          </div>
       </div>
-      <a href="<?php bloginfo('rss2_url'); ?>" title="Subscribe To New Listings Feed"><div id="rss"></div></a>
-      <a href="http://www.facebook.com/pages/Ella-Mae-Dexter-Realtor-Danville-Ky/" title="Facebook Page"><div id="facebook"></div></a>  
+      <a href="http://www.trulia.com" title="Trulia" target="blank"><div id="trulia"></div></a>
+      <a href="http://www.facebook.com/pages/Ella-Mae-Dexter-Realtor-Danville-Ky/111621035582003" title="Facebook Page" target="blank"><div id="facebook"></div></a>  
 </div>
    <!-- End Header -->

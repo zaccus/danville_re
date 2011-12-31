@@ -9,6 +9,11 @@ TAGS: danville ky real estate, danville ky homes for sale
 
 a:link {
    text-decoration: none;
+   color: #00516f;
+   }
+   
+a:visited {
+   color: #826200;
    }
    
 a:hover {
@@ -33,7 +38,11 @@ a:hover {
    
 .text-indent a {
    display: none;
-   }   
+   }
+   
+.hidden {
+   display: none;
+   }
    
 body {
    background-image: url("images/bg_tile.png");
@@ -63,22 +72,16 @@ ul {
 #header {
    width: 919px;
    height: 240px;
-   background-color: #7b7b7b;
+   background-image: url("images/main_st.png");
    margin: 0px auto 0px auto;
    border: 5px solid black;
    }
    
-#header_photo {
-   position: absolute;
-   background-image: url("images/main_st.png");
-   width: 819px;
-   height: 240px;
-   margin: 0px 0px 0px 101px;
-   }
-   
 #portrait {
+   position: absolute;
    border: 5px solid #ffffff;
    margin: 20px 0px 0px 20px;
+   z-index: 3;
    }
    
 #marquee_container {
@@ -96,8 +99,8 @@ ul {
    position: relative;
    width: 694px;
    height: 177px;
-   margin: -187px 0px 0px 200px;
-   z-index: 5;
+   margin: 25px 0px 0px 200px;
+   z-index: 2;
    }
    
 #logo {
@@ -107,6 +110,7 @@ ul {
 #tagline {
    position: absolute;
    margin: -275px 0px 0px 250px;
+   /z-index: 10;
    }
    
 #contact {
@@ -129,6 +133,7 @@ ul {
    padding: 2px;
    border: 4px solid #d2d2d2;
    text-align: center;
+   font-size: 11pt;
    border-radius: 15px;
    }
    
@@ -173,16 +178,16 @@ ul {
    margin: 0px 0px 0px 0px;
    }
    
-#rss {
+#trulia {
    position: absolute;
-   width: 32px;
-   height: 32px;
-   margin: 5px 0px 0px 840px;
-   background-image: url("images/rss_dark.png");
+   width: 60px;
+   height: 25px;
+   margin: 7px 0px 0px 810px;
+   background-image: url("images/trulia.png");
    }
    
-#rss:hover {
-   background-image: url("images/rss_active.png");
+#trulia:hover {
+   background-image: url("images/trulia_hover.png");
    }
    
 #facebook {
@@ -288,7 +293,7 @@ ul {
    float: left;
    width: 49px;
    height: 49px;
-   background-color: #ffffff;
+   background-color: #fbfbfb;
    border: 1px solid #936c3b;
    margin: 0px 10px 0px 10px;
    text-align: center;
@@ -326,7 +331,7 @@ ul {
    }
    
 .content-right-button {
-   background-color: #ffffff;
+   background-color: #fbfbfb;
    text-align: center;
    font-weight: bold;
    line-height: 20px;
@@ -374,7 +379,7 @@ ul {
    }
 
 .prop-box {
-   background-color: #ffffff;
+   background-color: #fbfbfb;
    width: 100%;
    margin: 0px 0px 10px 10px;
    padding: 20px;
@@ -414,8 +419,27 @@ ul {
 .tabnav li {
    float: left;
    border: 1px solid #b3922f;
+   background-color: #b3922f;
+   height: 18px;
    width: 150px;
    text-align: center;
+   }
+   
+.tabnav li a {
+   color: #ffffff;
+   font-weight: bold;
+   text-decoration: none;
+   }
+   
+li.active {
+   height: 18px;
+   background-color: #fbfbfb;
+   border: none;
+   border-top: 2px solid #b3922f;
+   }
+   
+li.active a {
+   color: #000000;
    }
 
 .tab-content {
@@ -457,10 +481,20 @@ ul {
    float: left;
    }
 
-/* Why Danville */
-.ngg-singlepic {
+/* Danville Links */
+
+.ngg-slideshow {
+   margin: 0px 0px 0px 100px;
    border: 1px solid #000000;
    padding: 2px;
+   }
+   
+.ngg-slideshow img {
+   margin: 2px;
+   }
+
+.linkcat {
+   list-style: none;
    }
 
 /* Other Pages */
@@ -485,7 +519,7 @@ ul {
    width: 275px;
    float: right;
    margin: 0px 10px 0px 0px;
-   background-color: #ffffff;
+   background-color: #fbfbfb;
    border: 2px solid #b3922f;
    }
    
@@ -510,7 +544,11 @@ ul {
    }
    
 .sidebar-widget li:hover {
-   background-color: #ececec;
+   background-color: #e9eff1;
+   }
+   
+ul.children li:hover {
+   background-color: #fbfbfb;
    }
    
 .sidebar-widget li a {
@@ -569,9 +607,13 @@ ul {
 
 #footer {
    width: 919px;
-   background-color: #bcbcbc;
+   background-color: #e3e3e3;
    border: 5px solid #000000;
    margin: 0px auto 0px auto;
+   }
+   
+#footer a {
+   color: #00516f;
    }
  
 #footer-sidebar h2 {
