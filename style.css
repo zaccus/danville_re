@@ -47,6 +47,7 @@ a:hover {
 body {
    background-image: url("images/bg_tile.png");
    font-family: verdana, arial, sans-serif;
+   font-size: 12pt;
    }
    
 ul {
@@ -110,7 +111,6 @@ ul {
 #tagline {
    position: absolute;
    margin: -275px 0px 0px 250px;
-   /z-index: 10;
    }
    
 #contact {
@@ -120,7 +120,6 @@ ul {
    }
  
 #nav-container {
-   /position: relative;
    margin: -155px 0px 0px 220px;
    z-index: 2;
    }   
@@ -128,7 +127,7 @@ ul {
 #nav li {
    display: block;
    float: left;
-   width: 120px;
+   width: 125px;
    background-color: #585858;
    padding: 2px;
    border: 4px solid #d2d2d2;

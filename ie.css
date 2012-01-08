@@ -7,12 +7,103 @@ AUTHOR URI: http://zaccus.com
 TAGS: danville ky real estate, danville ky homes for sale
 */
 
+/* IE Mods -- because this shit always has to be complicated */
+
 img {
 	border-style: none;
 	}
+	
+#wrapper {
+	background-color: #17a3d1;
+   filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+   																	 startColorstr='#d7d7d7', 
+   																	 endColorstr='#17a3d1'); /* IE6 & IE7 */ 
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+   																		  startColorstr='#d7d7d7', 
+   																		  endColorstr='#17a3d1')"; /* IE8 */
+	}
+	
+#marquee_container {
+	-moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+   -pie-background: rgba(188, 188, 188, 0.9);
+   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+#nav li {
+	-moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+#container {
+	position: relative;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+#content {
+	position: relative;
+	-pie-background: linear-gradient(#ffffff, #ede5d1);	
+	border-radius: 20px;
+   -moz-border-radius: 20px;
+   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+.slide-caption {
+	position: relative;
+	-pie-background: rgba(0, 0, 0, 0.65);
+	behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+.slideshow-button {
+	position: relative;
+	-moz-border-radius: 25px;
+   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+.content-right-button {
+	position: relative;
+	-moz-border-radius: 30px;
+   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+.content-right-button a {
+	text-decoration: none;
+	}
+	
+.sidebar-widget li {
+	position: relative;
+	-moz-border-radius: 15px;
+   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+.sidebar-widget li a {
+	text-decoration: none;
+	}
+	
+.wpcf7-text {
+	position: relative;
+	-moz-border-radius: 20px;
+	behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+.wpcf7-submit {
+	position: relative;
+	-moz-border-radius: 15px;
+	behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+	}
+	
+/* End IE Mods */
 
-a {
+a:link {
    text-decoration: none;
+   color: #00516f;
+   }
+   
+a:visited {
+   color: #826200;
    }
    
 a:hover {
@@ -24,17 +115,8 @@ a:hover {
    }
    
 .emboss {
-	position:relative; 
-	z-index:2;
+   text-shadow: 0px 1px 0px #ffffff;
    }
-   
-#tagline.shadow {
-	font-size: 50pt;
-	}
-
-#contact.shadow {
-	
-	}
    
 .clearboth {
    clear: both;
@@ -46,11 +128,16 @@ a:hover {
    
 .text-indent a {
    display: none;
-   }   
+   }
+   
+.hidden {
+   display: none;
+   }
    
 body {
    background-image: url("images/bg_tile.png");
    font-family: verdana, arial, sans-serif;
+   font-size: 12pt;
    }
    
 ul {
@@ -61,12 +148,6 @@ ul {
    width: 960px;
    margin: 0px auto 0px auto;
    background-color: #17a3d1;
-   filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,
-   																	 startColorstr='#d7d7d7', 
-   																	 endColorstr='#17a3d1'); /* IE6 & IE7 */ 
-   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,
-   																		  startColorstr='#d7d7d7', 
-   																		  endColorstr='#17a3d1')"; /* IE8 */ 
    background: -moz-radial-gradient(50% 50%, 
                                     circle, 
                                     #17a3d1 20px, 
@@ -77,32 +158,40 @@ ul {
                                        #ffffff 100%);
    border: 4px solid #7fa9b7;
    padding-top: 10px;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
    }
    
 #header {
    width: 919px;
    height: 240px;
-   background-color: #7b7b7b;
+   background-image: url("images/main_st.png");
    margin: 0px auto 0px auto;
    border: 5px solid black;
    }
    
 #portrait {
+   position: absolute;
    border: 5px solid #ffffff;
    margin: 20px 0px 0px 20px;
+   z-index: 3;
    }
+   
+#marquee_container {
+   position: absolute;
+   width: 694px;
+   height: 177px;
+   background-color: #bcbcbc;
+   margin: 25px 0px 0px 200px;
+   border-radius: 50px;
+   opacity: 0.7;
+   z-index: 2;
+   }   
    
 #marquee {
    position: relative;
    width: 694px;
    height: 177px;
-   background-color: #bcbcbc;
-   margin: -187px 0px 0px 200px;   
-   border-radius: 50px;
-   -moz-border-radius: 50px;
-   -webkit-border-radius: 50px;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
+   margin: 25px 0px 0px 200px;
+   z-index: 2;
    }
    
 #logo {
@@ -125,28 +214,21 @@ ul {
    z-index: 2;
    }   
    
-#nav .page_item {
+#nav li {
    display: block;
-   position: relative;
    float: left;
-   width: 120px;
+   width: 125px;
    background-color: #585858;
    padding: 2px;
    border: 4px solid #d2d2d2;
    text-align: center;
+   font-size: 10pt;
    border-radius: 15px;
-   -moz-border-radius: 15px;
-   -webkit-border-radius: 15px;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
    }
    
 #nav li:hover {
    background-color: #d2d2d2;
    }
-   
-.nav_hover {
-	background-color: #d2d2d2 !important;
-	}
    
 #nav li.current_page_item {
    background-color: #d2d2d2;
@@ -185,21 +267,16 @@ ul {
    margin: 0px 0px 0px 0px;
    }
    
-#rss {
+#trulia {
    position: absolute;
-   width: 32px;
-   height: 32px;
-   margin: 5px 0px 0px 840px;
-   background-image: url("images/rss_dark.png");
+   width: 60px;
+   height: 25px;
+   margin: 7px 0px 0px 810px;
+   background-image: url("images/trulia.png");
    }
    
-#rss a {
-   width: 100%;
-   height: 100%;
-   }
-   
-#rss:hover {
-   background-image: url("images/rss_active.png");
+#trulia:hover {
+   background-image: url("images/trulia_hover.png");
    }
    
 #facebook {
@@ -215,28 +292,31 @@ ul {
    }
    
 #container {
-	position: relative;
    width: 922px;
    border: 5px solid #000000;
    background-color: #ffeebc;
    margin: 10px auto 10px auto;
    border-radius: 20px;
-   -moz-border-radius: 20px;
-   -webkit-border-radius: 20px;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
    }
    
 #content {
-	position: relative;
-   background: -ms-linear-gradient(#ffffff, #ede5d1); /*IE10*/
-	-pie-background: linear-gradient(#ffffff, #ede5d1); /*PIE*/
+   background: -moz-radial-gradient(50% 50%, 
+                                    circle, 
+                                    #ffeebe 20px, 
+                                    #ffffff 100%);
+   background: -webkit-radial-gradient(50% 50%,
+                                       circle,
+                                       #ffeebe 20px,
+                                       #ffffff 100%);
    width: 897px;
    margin: 10px auto 10px auto;
    padding: 0px auto 10px auto;
    border-radius: 20px;
-   -moz-border-radius: 20px;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
    }
+   
+#content h2 {
+   font-family: "News Cycle";
+   }   
    
 /* Index Page */   
    
@@ -263,11 +343,8 @@ ul {
    width: 573px;
    height: 69px;
    background-color: #000000;
-   margin: -120px 0px 0px 0px;
    opacity: 0.65;
-   filter: alpha(opacity=65); /* IE6+ */ 
-   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=65); /* IE6+ */ 
-   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=65)"; /* this works in IE8 only */ 
+   margin: -120px 0px 0px 0px;
    }
 
 .slide-text {
@@ -278,6 +355,7 @@ ul {
    color: #ffffff;
    font-size: 15pt;
    font-weight: bold;
+   opacity: 1.00;
    }
 
 .slide-address {
@@ -301,17 +379,14 @@ ul {
    }
    
 .slideshow-button {
-	position: relative;
    float: left;
    width: 49px;
    height: 49px;
-   background-color: #ffffff;
+   background-color: #fbfbfb;
    border: 1px solid #936c3b;
    margin: 0px 10px 0px 10px;
    text-align: center;
    border-radius: 30px;
-   -moz-border-radius: 25px;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
    }
    
 .slideshow-button:hover {
@@ -345,8 +420,7 @@ ul {
    }
    
 .content-right-button {
-	position: relative;
-   background-color: #ffffff;
+   background-color: #fbfbfb;
    text-align: center;
    font-weight: bold;
    line-height: 20px;
@@ -354,8 +428,6 @@ ul {
    padding: 10px;
    border: 2px solid #936c3b;
    border-radius: 30px;
-   -moz-border-radius: 30px;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
    }
    
 .content-right-button:hover {
@@ -393,20 +465,18 @@ ul {
    
 .prop-thumb img:hover {
    opacity: 0.8;
-   filter: alpha(opacity=80); /* IE6+ */ 
-
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80); /* IE6+ */ 
-
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=80)"; /* this works in IE8 only */ 
-
    }
 
-.prop-box-avail {
-   background-color: #ffffff;
+.prop-box {
+   background-color: #fbfbfb;
    width: 100%;
    margin: 0px 0px 10px 10px;
    padding: 20px;
    border: 2px solid #b3922f;
+   }
+   
+.listing-item {
+   height: 224px;
    }
    
 .listing-address h2 {
@@ -438,8 +508,27 @@ ul {
 .tabnav li {
    float: left;
    border: 1px solid #b3922f;
+   background-color: #b3922f;
+   height: 18px;
    width: 150px;
    text-align: center;
+   }
+   
+.tabnav li a {
+   color: #ffffff;
+   font-weight: bold;
+   text-decoration: none;
+   }
+   
+li.active {
+   height: 18px;
+   background-color: #fbfbfb;
+   border: none;
+   border-top: 2px solid #b3922f;
+   }
+   
+li.active a {
+   color: #000000;
    }
 
 .tab-content {
@@ -480,7 +569,23 @@ ul {
 .single-propdata-line {
    float: left;
    }
+
+/* Danville Links */
+
+.ngg-slideshow {
+   margin: 0px 0px 0px 100px;
+   border: 1px solid #000000;
+   padding: 2px;
+   }
    
+.ngg-slideshow img {
+   margin: 2px;
+   }
+
+.linkcat {
+   list-style: none;
+   }
+
 /* Other Pages */
 
 #page-content-inner {
@@ -503,7 +608,7 @@ ul {
    width: 275px;
    float: right;
    margin: 0px 10px 0px 0px;
-   background-color: #ffffff;
+   background-color: #fbfbfb;
    border: 2px solid #b3922f;
    }
    
@@ -520,18 +625,19 @@ ul {
    }
    
 .sidebar-widget li {
-	position: relative;
    border: 2px solid #936c3b;
    border-right-color: #ffffff;
+   border-radius: 15px;
    padding: 0px 0px 0px 10px;
    margin: 0px 0px 0px -5px;
-   border-radius: 15px;
-   -moz-border-radius: 15px;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
    }
    
 .sidebar-widget li:hover {
-   background-color: #ececec;
+   background-color: #e9eff1;
+   }
+   
+ul.children li:hover {
+   background-color: #fbfbfb;
    }
    
 .sidebar-widget li a {
@@ -562,15 +668,11 @@ ul {
    }
 
 .wpcf7-text {
-	position: relative;
    width: 300px;
-   height: 100%;
    border: 2px solid #b3922f;
    border-radius: 20px;
-   -moz-border-radius: 20px;
    padding: 5px 10px 5px 10px;
    font-size: 15pt;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
    }
 
 .form-notes {
@@ -578,15 +680,12 @@ ul {
    }
 
 .wpcf7-submit {
-	position: relative;
    width: 100px;
    border: 2px solid #b3922f;
    border-radius: 15px;
-   -moz-border-radius: 15px;
    color: #b3922f;
    background-color: #ffffff;
    font-weight: bold;
-   behavior: url(/emdre/wp-content/themes/danville_re/PIE.htc);
    }
    
 .wpcf7-submit:hover {
@@ -597,9 +696,13 @@ ul {
 
 #footer {
    width: 919px;
-   background-color: #bcbcbc;
+   background-color: #e3e3e3;
    border: 5px solid #000000;
    margin: 0px auto 0px auto;
+   }
+   
+#footer a {
+   color: #00516f;
    }
  
 #footer-sidebar h2 {
@@ -624,4 +727,11 @@ ul {
    width: 290px;
    float: left;
    margin: 0px 15px 10px 0px;
+   }
+   
+#credits {
+   font-size: 8pt;
+   text-align: center;
+   height: 12px;
+   padding: 0px 0px 5px 0px;
    }
